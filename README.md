@@ -1,8 +1,8 @@
 # Análisis Vintage de Mora Crediticia (Moroso-Vencido)
 
 ## Descripción
-
-Proyecto de ciencia de datos para realizar **análisis vintage** sobre la cartera de créditos otorgados por OC. El análisis vintage permite evaluar la calidad crediticia de cada cohorte de otorgamiento, observando cómo evoluciona la mora (ratio moroso/vencido) a medida que pasan los meses desde el otorgamiento.
+(SIN DATOS REALES)
+Proyecto de ciencia de datos para realizar **análisis vintage** sobre la cartera de créditos otorgados. El análisis vintage permite evaluar la calidad crediticia de cada cohorte de otorgamiento, observando cómo evoluciona la mora (ratio moroso/vencido) a medida que pasan los meses desde el otorgamiento.
 
 ## Estructura del Proyecto
 
@@ -33,7 +33,7 @@ Proyecto de ciencia de datos para realizar **análisis vintage** sobre la carter
 
 ## Datos de Entrada
 
-El archivo fuente está en `data/raw/otorgamientos 2024-2025.csv`. Es un **CSV único** que contiene todas las cohortes de otorgamiento (de 2024-01 a 2025-12) con la evolución mes a mes de:
+El archivo fuente está en `data/raw/otorgamientos 2024-2025.csv`. Es un **CSV único** que contiene todas las cohortes de otorgamiento, con la evolución mes a mes de:
 
 - Montos vencidos acumulados
 - Montos pagados acumulados
@@ -43,7 +43,6 @@ El archivo fuente está en `data/raw/otorgamientos 2024-2025.csv`. Es un **CSV �
 
 El archivo usa `;` como separador y `,` como separador decimal.
 
-> **Nota:** A diferencia de la versión anterior (CFN), donde los datos venían separados en un CSV por cada mes de otorgamiento, aquí toda la información está consolidada en un solo archivo.
 
 ## Uso
 
@@ -157,35 +156,3 @@ Abrir `notebooks/tablero_cohortes_sinteticas.ipynb` para proyectar cohortes futu
 ```bash
 pip install -r requirements.txt
 ```
-
-## Cohortes disponibles
-
-| Cohorte   | MOB máximo |
-|-----------|------------|
-| 2024-01   | 24         |
-| 2024-02   | 23         |
-| 2024-03   | 22         |
-| 2024-04   | 21         |
-| 2024-05   | 20         |
-| 2024-06   | 19         |
-| 2024-07   | 18         |
-| 2024-08   | 17         |
-| 2024-09   | 16         |
-| 2024-10   | 15         |
-| 2024-11   | 14         |
-| 2024-12   | 13         |
-| 2025-01   | 12         |
-| 2025-02   | 11         |
-| 2025-03   | 10         |
-| 2025-04   | 9          |
-| 2025-05   | 8          |
-| 2025-06   | 7          |
-| 2025-07   | 6          |
-| 2025-08   | 5          |
-| 2025-09   | 4          |
-| 2025-10   | 3          |
-| 2025-11   | 2          |
-| 2025-12   | 1          |
-| 2026-01   | 1          |
-
-Todos los datos con mora observada hasta 2026-01.
