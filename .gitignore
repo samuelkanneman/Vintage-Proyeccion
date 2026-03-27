@@ -1,0 +1,39 @@
+# ─── Datos (no subir al repo) ──────────────────────────────
+data/raw/
+data/processed/
+data/external/
+
+# ─── CSVs sueltos ─────────────────────────────────────────
+*.csv
+
+# ─── Reportes generados ───────────────────────────────────
+reports/*.png
+reports/*.html
+
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── Entornos virtuales ──────────────────────────────────
+.venv/
+venv/
+env/
+
+# ─── IDE ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── OS ───────────────────────────────────────────────────
+Thumbs.db
+.DS_Store
+
+# ─── Backups de notebooks ────────────────────────────────
+*_backup.ipynb
